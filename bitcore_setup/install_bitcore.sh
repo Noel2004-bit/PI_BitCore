@@ -7,7 +7,6 @@ COIN=$(echo ${COIN_NAME} | tr '[:upper:]' '[:lower:]')
 COIN_PORT="8555"
 COIN_RPCPORT="8556"
 COIN_DOWNLOAD="https://github.com/LIMXTEC/${COIN_NAME}"
-COIN_VERSION="$(curl -s ${COIN_DOWNLOAD}/releases/latest | cut -d'"' -f2 | cut -d'/' -f8)"
 COIN_BLOCKCHAIN_VERSION="bootstrap"
 COIN_BLOCKCHAIN="https://github.com/LIMXTEC/${COIN_NAME}/releases/download/${COIN_VERSION}/${COIN_BLOCKCHAIN_VERSION}.zip"
 COIND="/usr/local/bin/${COIN}d"
